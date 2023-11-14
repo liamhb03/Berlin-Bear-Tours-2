@@ -66,17 +66,19 @@
 
           </div>
         </div>
-        <!-- mobile button -->
-<!-- Mobile button -->
+
+
+        <!-- Mobile button -->
 <div class="md:hidden">
-    <button @click="navOpen = !navOpen" class="mobile-menu-button">
-      <!-- Menu icon (hamburger) when navOpen is false -->
-      <svg x-show="!navOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-  
-      <!-- Close icon (cross) when navOpen is true -->
-      <svg x-show="navOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-    </button>
-  </div>
+  <button @click="navOpen = !navOpen" class="mobile-menu-button">
+    <!-- Menu icon (hamburger) when navOpen is false -->
+    <svg x-show="!navOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+
+    <!-- Close icon (cross) when navOpen is true -->
+    <svg x-show="navOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+  </button>
+</div>
+
         <!-- secondary nav -->
         <div class="hidden md:flex items-center space-x-2">
             <a href="#" class="py-1 px-3 hover:text-blue-900">Home</a>
@@ -114,15 +116,81 @@
 </header>
   
 
+  <!-- Services Page Content -->
 
-  <!-- CTA Section -->
-  <section class="bg-blue-900 text-white text-center py-16">
-    <div class="max-w-lg mx-auto">
-      <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-3xl font-bold">Ready for an Unforgettable Trip?</h2>
-      <p class="mt-4 mb-8">Contact us today to hear about upcoming adventures.</p>
-      <a href="/about" class="bg-white text-blue-900 hover:bg-gray-100 font-semibold px-5 py-3 rounded-sm">Learn More About Valeska</a>
+  <!-- Trips Section -->
+  <section class="py-12 md:py-24 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 500" class="text-center text-3xl font-bold mb-4">Trips Offered</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Each div represents a trip information card -->
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Trips for Families</h3>
+          <p class="text-gray-600 text-sm">Enjoy a worry-free family holiday with activities tailored for all ages.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Trips for Couples</h3>
+          <p class="text-gray-600 text-sm">Romantic getaways crafted to create unforgettable moments together.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Trips for Adventure Seekers</h3>
+          <p class="text-gray-600 text-sm">Thrilling adventures for those who wish to experience Europe's wild side.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Trips for Culture Enthusiasts</h3>
+          <p class="text-gray-600 text-sm">Immerse yourself in the rich cultural tapestry of European history.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Documents Section -->
+  <section class="py-12 md:py-24">
+    <div class="container mx-auto px-4">
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-center text-3xl font-bold mb-4">Travel Documents</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Each div represents a travel document information card -->
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Passport Requirements</h3>
+          <p class="text-gray-600 text-sm">Make sure your passport is valid for the duration of your trip.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Visa Information</h3>
+          <p class="text-gray-600 text-sm">Check if you need a visa and how to apply for it.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Travel Insurance</h3>
+          <p class="text-gray-600 text-sm">Learn about the recommended insurance options for your travels.</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Customs Regulations</h3>
+          <p class="text-gray-600 text-sm">Understand what you can bring into the country and what to declare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Trips Gallery Section -->
+  <section class="py-12 md:py-24 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-center text-3xl font-bold mb-4">Previous Trips Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Each div represents a gallery photo card -->
+        <div class="bg-white rounded-lg p-2 shadow">
+          <img class="rounded-lg h-48 w-full object-cover" src="gallery-photo-1.jpg" alt="Gallery Photo 1">
+        </div>
+        <div class="bg-white rounded-lg p-2 shadow">
+          <img class="rounded-lg h-48 w-full object-cover" src="gallery-photo-2.jpg" alt="Gallery Photo 2">
+        </div>
+        <div class="bg-white rounded-lg h-48 w-full object-cover" src="gallery-photo-3.jpg" alt="Gallery Photo 3">
+        </div>
+        <div class="bg-white rounded-lg p-2 shadow">
+          <img class="rounded-lg h-48 w-full object-cover" src="gallery-photo-4.jpg" alt="Gallery Photo 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="bg-gray-100">
