@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berlin Bear Trips - Home</title>
+  <title>Berlin Bear Tours - Home</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <meta name="description" content="Berlin Bear Trips offers guided tours of Germany and Europe led by an experienced guide born and raised in Germany, currently residing in Maine. Berlin Bear Trips is headquartered in Maine, USA.">
-  <meta name="keywords" content="europe tours, europe trips, germany tours, germany trips, europe tours for americans, history europe trips">
+  <meta name="description" content="Berlin Bear Tours offers guided tours of Germany and Europe led by an experienced guide born and raised in Germany, currently residing in Maine. Berlin Bear Tours is headquartered in Maine, USA.">
+  <meta name="keywords" content="europe tours, europe Tours, germany tours, germany Tours, europe tours for americans, history europe Tours">
   <meta name="robots" content="index, follow">
   <meta name="allow-search" content="/, /about, /services">
 
@@ -66,8 +67,8 @@
           <!-- logo -->
           <div class="flex items-center justify-center">
             <a href="/" class="flex items-center text-gray-800">
-              <img src="logo.png" alt="Berlin Bear Trips Logo" class="lg:block hidden h-6 w-auto mr-2">
-              <img src="logosmall.png" alt="Berlin Bear Trips Logo" class="lg:hidden block h-10 w-auto mr-2">
+              <img src="logo.png" alt="Berlin Bear Tours Logo" class="lg:block hidden h-6 w-auto mr-2">
+              <img src="logosmall.png" alt="Berlin Bear Tours Logo" class="lg:hidden block h-10 w-auto mr-2">
             </a>
           </div>
           <!-- primary nav -->
@@ -117,8 +118,9 @@
   <!-- Header -->
   <header class="custom-header text-white text-center py-24">
     <div class="m-auto max-w-7xl px-4">
-      <h1 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-4xl font-bold">Welcome to Berlin Bear Trips</h1>
-      <p class="mt-4">Experience Europe like never before with our tailored trips and exclusive tour packages.</p>
+      <h1 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-4xl font-bold">Welcome to Berlin Bear Tours</h1>
+      <p class="mt-4">Experience Europe like never before with our tailored trips and exclusive tour packages.<br>Based in beautiful Maine! 🦞
+      </p>
       <a href="services" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-semibold mt-8 px-5 py-3 rounded-sm">Discover Our Services</a>
     </div>
 </header>
@@ -130,62 +132,71 @@
     <div class="container max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-center text-3xl font-bold">Our Partners</h2>
-        <p class="mt-4 mb-8 text-center">We carefully choose a special assortment of hotels & restaurants.</p>
+        <p class="mt-4 mb-8 text-center">Here are some of our partners that may serve you during a tour.</p>
 
-      <div class="flex flex-wrap justify-center items-center -mx-4">
+      <div class="w-full flex md:flex-nowrap flex-wrap justify-center items-center">
         
         <!-- Partner Logo 1 -->
-        <div class="px-4 mb-6 sm:w-1/2 md:w-1/4 lg:mb-0">
+        <div class="px-4 mb-6  lg:mb-0">
           <img
-            class="mx-auto h-8 md:h-18"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/2560px-Google_2015_logo_colorless_mourning_period.svg.png"
+            class="mx-auto w-16 md:w-24"
+            src="logo1.png"
             alt="Partner Logo 1"
           />
         </div>
         
         <!-- Partner Logo 2 -->
-        <div class="px-4 mb-6 sm:w-1/2 md:w-1/4 lg:mb-0">
+        <div class="px-4 mb-6  lg:mb-0">
           <img
-            class="mx-auto h-8 md:h-18"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/2560px-Google_2015_logo_colorless_mourning_period.svg.png"
+            class="mx-auto w-16 md:w-24"
+            src="logo2.png"
             alt="Partner Logo 2"
           />
         </div>
         
         <!-- Partner Logo 3 -->
-        <div class="px-4 mb-6 sm:w-1/2 md:w-1/4 lg:mb-0">
+        <div class="px-4 mb-6  lg:mb-0">
           <img
-            class="mx-auto h-8 md:h-18"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/2560px-Google_2015_logo_colorless_mourning_period.svg.png"
+            class="mx-auto w-16 md:w-24"
+            src="logo3.png"
             alt="Partner Logo 3"
           />
         </div>
         
         <!-- Partner Logo 4 -->
-        <div class="px-4 mb-6 sm:w-1/2 md:w-1/4 lg:mb-0">
+        <div class="px-4 mb-6  lg:mb-0">
           <img
-            class="mx-auto h-8 md:h-18"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/2560px-Google_2015_logo_colorless_mourning_period.svg.png"
+            class="mx-auto w-16 md:w-24"
+            src="logo4.png"
             alt="Partner Logo 4"
           />
         </div>
+
+        <div class="px-4 mb-6  lg:mb-0">
+          <img
+            class="mx-auto w-16 md:w-24"
+            src="logo5.png"
+            alt="Partner Logo 4"
+          />
+        </div>
+
   
       </div>
     </div>
   </section>
 
     <!-- Posts Section -->
-    <section class="py-12 md:py-24">
+    <section id="upcoming" class="py-12 md:py-24">
         <div class="container mx-auto px-4">
-            <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-center text-3xl font-bold mb-4">Upcoming Trips & Info</h2>
+            <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="text-center text-3xl font-bold mb-4">Upcoming Tours & Info</h2>
           <div class="flex overflow-x-scroll no-scrollbar">
 
             <!-- Post Card -->
-            <div onclick="location.href='post';" class="hover:shadow-lg cursor-pointer border-gray-100 border flex-shrink-0 w-80 m-2 bg-white shadow rounded-sm p-4">
-              <img class="rounded-sm h-40 w-full object-cover" src="https://source.boringavatars.com/bauhaus/120/post?colors=000000,FF0000,FFD700,0000FF,FFFFFF&square=true" alt="Post Title">
+            <div onclick="location.href='posts/berlin-usedom';" class="hover:shadow-lg cursor-pointer border-gray-100 border flex-shrink-0 w-80 m-2 bg-white shadow rounded-sm p-4">
+              <img class="rounded-sm h-40 w-full object-cover" src="https://source.boringavatars.com/bauhaus/120/berlin-usedom?colors=000000,FF0000,FFD700&square=true" alt="Post Title">
               <div class="pt-2">
-                <h3 class="font-semibold text-2xl">Post Title 1</h3>
-                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <h3 class="font-semibold text-2xl">Berlin and Usedom, Germany Trip</h3>
+                <p class="text-gray-600 mt-2">04/12/2024 – 04/19/2024</p>
               </div>
             </div>
             <!-- Additional post cards go here -->
@@ -201,7 +212,7 @@
       <section class="bg-white py-12 md:py-24">
         <div class="container mx-auto px-4">
             <h2 style="font-family: 'Fraunces', serif; font-weight: 500;" class="mb-4 text-center text-3xl font-bold">Receive Updates</h2>
-          <form class="max-w-lg mx-auto space-y-4">
+          <form id="myForm" class="max-w-lg mx-auto space-y-4">
             <div class="flex flex-col">
               <label for="name" class="mb-2 font-semibold text-gray-700">Name</label>
               <input id="name" class="appearance-none w-full p-2 border border-gray-300 rounded-sm" type="text" placeholder="Your Name" required>
@@ -215,10 +226,13 @@
               <input id="email" class="appearance-none w-full p-2 border border-gray-300 rounded-sm" type="email" placeholder="Your Email" required>
             </div>
             <div class="flex flex-col">
-              <label for="trip_type" class="mb-2 font-semibold text-gray-700">Type of Trip Interested In</label>
-              <input id="trip_type" class="appearance-none w-full p-2 border border-gray-300 rounded-sm" type="text" placeholder="Adventure, Relaxation, etc." required>
+              <label for="trip_type" class="mb-2 font-semibold text-gray-700">Trip of Interest</label>
+              <input id="trip_type" class="appearance-none w-full p-2 border border-gray-300 rounded-sm" type="text" placeholder="Question, Relaxation, etc." required>
             </div>
-            <button type="submit" class="inline-block bg-blue-900 hover:bg-indigo-900 text-white font-semibold mt-8 px-5 py-3 rounded-sm">Subscribe</button>
+            <button id="submit-button" class="inline-block bg-blue-900 hover:bg-indigo-900 text-white font-semibold mt-8 px-5 py-3 rounded-sm">Subscribe</button>
+
+            <p class="mt-4 text-xs">Questions or concerns? Email Valeska at <a class="text-blue-600 hover:underline" href="mailto:vhornschild@gmx.net">vhornschild@gmx.net</a>.</p>
+
           </form>
         </div>
       </section>
@@ -236,11 +250,48 @@
   <footer class="bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
-        <p id="copyright"><script>document.write('Copyright © ' + new Date().getFullYear() + ' Berlin Bear Trips. All rights reserved.');</script></p>
-        <p>Made in Maine 🦞</p>
+        <p id="copyright"><script>document.write('Copyright © ' + new Date().getFullYear() + ' Berlin Bear Tours. All rights reserved.');</script></p>
+        <p>Made in Maine 🌲</p>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      // Capture form input values
+      var name = document.getElementById('name').value;
+      var cityState = document.getElementById('city_state').value;
+      var email = document.getElementById('email').value;
+      var tripType = document.getElementById('trip_type').value;
+    
+      // Google Forms submission URL
+      var formUrl = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfJpi-AuTrzQA0jbqeEIuGkwGa6TT3IO8HaSa4csQEPQx-6Ow/formResponse";
+      
+      // Prepare the data to send
+      var formData = new FormData();
+      formData.append("entry.316493882", name);
+      formData.append("entry.1825474581", cityState);
+      formData.append("entry.781910458", email);
+      formData.append("entry.162708096", tripType);
+    
+      // Create and send an AJAX request
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', formUrl);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          alert("Thank you for your submission!");
+          document.getElementById('myForm').reset();
+        }
+      };
+    
+    
+      // Send the form data to Google Forms
+      xhr.send(new URLSearchParams(formData).toString());
+    });
+    </script>
 
 </body>
 </html>
